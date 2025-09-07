@@ -1,115 +1,137 @@
-📘 Student Study Tracker – Description & User Manual
-🌟 App Description
+Got it ✅
+Here’s the **full README.md file** in one block so you can copy everything at once:
 
-The Student Study Tracker is a simple, interactive web app (built with Streamlit) that helps students manage their Physics and Additional Mathematics revision.
+---
 
-It focuses on:
+# 📘 README.md
 
-Daily planning: Add subject-specific tasks by date.
+````markdown
+# Student Study Tracker
 
-Accountability: Mark tasks as Done, Pending, or Skipped.
+## 📖 Short Description
+A simple Streamlit web app to help students plan, track, and reflect on their **Physics** and **Additional Mathematics** study tasks, with auto carry-forward for incomplete work and progress visualization.
 
-Carry-forward system: Incomplete tasks automatically roll over to the next day.
+---
 
-Progress tracking: See completion rates, study hours, and trends over time.
+## 💡 Motivation / Problem
+Many students struggle with consistent daily study habits. Tasks are often forgotten if left incomplete, and progress toward exam targets is difficult to measure.  
+This app solves that by:
+- Encouraging **daily planning**  
+- Tracking **completion accountability**  
+- Automatically **carrying forward unfinished tasks**  
+- Showing **progress charts** against targets  
 
-Student profile: Store current exam results and targets for upcoming exams.
+---
 
-Data export: Download study records as CSV for backup or sharing.
+## ✨ Key Features
+- 🗓️ **Daily Plan**: Add Physics/Add Maths tasks with planned hours.  
+- ✅ **Mark Completion**: Mark tasks as Done, Pending, or Skipped, with reflections.  
+- 🔁 **Carry-Forward System**: Incomplete tasks roll over to the next day automatically.  
+- 📊 **Progress Dashboard**: Track completion %, study hours, and subject trends.  
+- 👤 **Student Profile**: Save current & target exam results.  
+- 📂 **Data Export**: Download tasks as CSV for backup/review.  
 
-The app combines time management, task accountability, and progress monitoring — all in one place.
+---
 
-📝 User Manual
-1. Getting Started
+## 🎥 Demo Link 
+Coming soon 
 
-Launch the app with:
+---
 
-streamlit run app.py
+## 🛠️ Prerequisites
+- Python 3.9+  
+- Git (for cloning)  
+- A modern web browser  
 
-The app will open in your browser.
+---
 
-2. Onboarding
+## ⚙️ Installation Steps
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/<your-username>/student-study-tracker.git
+   cd student-study-tracker
+````
 
-Fill in your Name, Current Results, and Target Results for Physics and Add Maths.
+2. Create a virtual environment:
 
-Save your profile (details are stored for future use).
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # Mac/Linux
+   .venv\Scripts\activate      # Windows
+   ```
+3. Install dependencies:
 
-3. Choosing a Date
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the app:
 
-Use the sidebar on the left to pick the date you want to plan or review.
+   ```bash
+   streamlit run app.py
+   ```
+5. Open in your browser at `http://localhost:8501`.
 
-All tasks you add, view, or mark as completed are tied to this date.
+---
 
-⚡ Tip: If you select tomorrow, unfinished tasks from today will auto-carry forward.
+## 🚀 Usage Examples
 
-4. Tabs Overview
-🗓️ Daily Plan
+* **Add tasks for today** under the *Daily Plan* tab.
+* **Switch to tomorrow** in the sidebar → unfinished tasks roll forward automatically.
+* **Mark completion** at the end of the day.
+* **Check progress** in the *Progress* tab (completion % + study hours).
+* **Export data** in the *Settings* tab.
 
-Add new tasks for the chosen date:
+---
 
-Enter task name
+## 🔧 Configuration
 
-Select subject (Physics / Add Maths)
+* Data is stored locally in a `/data` folder as CSV files:
 
-Add planned study hours
+  * `tasks.csv` (study tasks & status)
+  * `students.csv` (student profiles)
+  * `meta.csv` (carry-forward tracking)
 
-(Optional) Write notes
+---
 
-Saved tasks appear in a table below.
+## 🛤️ Roadmap
 
-✅ Mark Completion
+* Multi-day carry-forward (chain missed days).
+* Support for multiple subjects beyond Physics & Add Maths.
+* Cloud sync / database integration.
+* Gamification (streaks, badges).
 
-View the task list for the selected date.
+---
 
-For each task, choose:
+## 🤝 Contribution Guidelines
 
-Pending (default)
+Contributions are welcome!
+Please fork the repo and submit a Pull Request.
+Future `CONTRIBUTING.md` coming soon.
 
-Done (completed)
+---
 
-Skipped (did not attempt)
+## 📜 License
 
-Optionally, enter actual study hours and a reflection note.
+MIT License – feel free to use, modify, and share.
 
-Save updates individually.
+---
 
-📈 Progress
+## 👤 Author & Contact
 
-View a progress bar for the selected date (percentage of tasks completed).
+**Anand 
+📧 Contact: anandraj@merakitlc.com
 
-Charts show:
+---
 
-Daily completion % over time
+## 🙏 Acknowledgements
 
-Study hours per subject (planned vs actual)
+* [Streamlit](https://streamlit.io/) for the web framework
+* [Pandas](https://pandas.pydata.org/) for data handling
+* Inspired by everyday student struggles with exam preparation
 
-A table of recent tasks is also shown.
+```
 
-⚙️ Settings
+---
 
-Export data as tasks.csv (can be opened in Excel/Google Sheets).
-
-Option to clear your tasks (permanently deletes tasks for your profile).
-
-5. Carry-Forward Logic
-
-At the start of each new day (or when you switch the sidebar to a new date):
-
-All tasks from the previous day that are Pending or Skipped are copied to the new date.
-
-The carried tasks keep a record of which day they came from.
-
-6. Example Workflow
-
-Morning: Pick today’s date → Add Physics & Add Maths tasks in Daily Plan.
-
-Evening: Go to Mark Completion → Mark tasks Done or Skipped.
-
-Tomorrow: Switch sidebar to next day → Yesterday’s skipped tasks appear automatically.
-
-End of week: Check Progress tab to see completion % and study hours.
-
-Before exams: Download tasks.csv from Settings for review.
-
-✨ In short:
-This app ensures students plan daily, stay accountable, and track progress towards exam targets — helping them stay consistent until SPM.
+Would you also like me to give you a **.gitignore file** (so `data/` CSVs and `.venv/` don’t get uploaded to GitHub)?
+```
