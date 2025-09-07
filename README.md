@@ -129,9 +129,4 @@ MIT License – feel free to use, modify, and share.
 * [Pandas](https://pandas.pydata.org/) for data handling
 * Inspired by everyday student struggles with exam preparation
 
-```
 
----
-
-Would you also like me to give you a **.gitignore file** (so `data/` CSVs and `.venv/` don’t get uploaded to GitHub)?
-```
